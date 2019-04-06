@@ -6,6 +6,8 @@ Design specifications:
 
 * Simple 2-layer, 0.3mm vias, 0.2mm trace/space rules
 * SBUS input can be inverted via solder jumper
+* The USB is also available on header for direct soldering
+* M2 mounting hole
 
 ---
 
