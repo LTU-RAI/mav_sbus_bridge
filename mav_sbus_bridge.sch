@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L interface_esd:NUF2042XV6T1G U102
-U 1 1 5CA3DBEF
-P 6100 4050
-F 0 "U102" H 6125 4375 50  0000 C CNN
-F 1 "NUF2042XV6T1G" H 6125 4284 50  0000 C CNN
-F 2 "sot:SOT-563" H 6100 3650 50  0001 C CNN
-F 3 "" H 6100 3750 50  0001 C CNN
-	1    6100 4050
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Connector:USB_B_Micro J104
 U 1 1 5CA3C85A
 P 4650 3950
@@ -38,30 +27,7 @@ F 4 "10118194-0001LF" H 4650 3950 50  0001 C CNN "MPN"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4950 3950 5750 3950
-Wire Wire Line
-	5750 4150 5250 4150
-Wire Wire Line
-	5250 4150 5250 4050
-Wire Wire Line
-	5250 4050 4950 4050
-Wire Wire Line
 	4950 3750 5500 3750
-Wire Wire Line
-	5500 3750 5500 4050
-Wire Wire Line
-	5500 4050 5750 4050
-$Comp
-L power:GND #PWR0101
-U 1 1 5CA42F42
-P 6400 4050
-F 0 "#PWR0101" H 6400 3800 50  0001 C CNN
-F 1 "GND" V 6405 3922 50  0001 R CNN
-F 2 "" H 6400 4050 50  0001 C CNN
-F 3 "" H 6400 4050 50  0001 C CNN
-	1    6400 4050
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:VBUS #PWR0102
 U 1 1 5CA43638
@@ -75,7 +41,6 @@ F 3 "" H 5500 3700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5500 3700 5500 3750
-Connection ~ 5500 3750
 $Comp
 L Device:C_Small C102
 U 1 1 5CA50A1C
@@ -293,15 +258,11 @@ $EndComp
 Wire Wire Line
 	7550 4000 6800 4000
 Wire Wire Line
-	6800 4000 6800 4150
-Wire Wire Line
-	6800 4150 6400 4150
+	6800 4000 6800 4050
 Wire Wire Line
 	7550 4100 6850 4100
 Wire Wire Line
 	6850 4100 6850 3950
-Wire Wire Line
-	6850 3950 6400 3950
 $Comp
 L 74xGxx:74AHCT1G86 U101
 U 1 1 5CABA1BF
@@ -427,17 +388,6 @@ F 3 "~" H 3600 4950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Conn_01x04_Male J103
-U 1 1 5CAD19B5
-P 3350 3900
-F 0 "J103" H 3458 4089 50  0000 C CNN
-F 1 "Conn_01x04_Male" H 3458 4090 50  0001 C CNN
-F 2 "connectors:1x4_2.54mm" H 3350 3900 50  0001 C CNN
-F 3 "~" H 3350 3900 50  0001 C CNN
-	1    3350 3900
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VBUS #PWR0120
 U 1 1 5CAD2566
 P 3650 4200
@@ -471,10 +421,10 @@ U 1 1 5CADC53B
 P 3000 4950
 F 0 "J101" H 3108 5139 50  0000 C CNN
 F 1 "Conn_01x03_Male" H 3108 5140 50  0001 C CNN
-F 2 "connectors:1x3_2.54mm" H 3000 4950 50  0001 C CNN
+F 2 "connectors:1x3_2.54mm_castellated" H 3000 4950 50  0001 C CNN
 F 3 "~" H 3000 4950 50  0001 C CNN
 	1    3000 4950
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0122
@@ -525,10 +475,10 @@ U 1 1 5CAE4330
 P 3000 5600
 F 0 "J102" H 3108 5789 50  0000 C CNN
 F 1 "Conn_01x03_Male" H 3108 5790 50  0001 C CNN
-F 2 "connectors:1x3_2.54mm" H 3000 5600 50  0001 C CNN
+F 2 "connectors:1x3_2.54mm_castellated" H 3000 5600 50  0001 C CNN
 F 3 "~" H 3000 5600 50  0001 C CNN
 	1    3000 5600
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0124
@@ -604,28 +554,6 @@ F 3 "" H 3650 3700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H101
-U 1 1 5CA8A22A
-P 9250 1200
-F 0 "H101" H 9350 1203 50  0000 L CNN
-F 1 "MountingHole_Pad" H 9350 1158 50  0001 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 9250 1200 50  0001 C CNN
-F 3 "~" H 9250 1200 50  0001 C CNN
-	1    9250 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0127
-U 1 1 5CA8ADD0
-P 9250 1300
-F 0 "#PWR0127" H 9250 1050 50  0001 C CNN
-F 1 "GND" V 9255 1172 50  0001 R CNN
-F 2 "" H 9250 1300 50  0001 C CNN
-F 3 "" H 9250 1300 50  0001 C CNN
-	1    9250 1300
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0126
 U 1 1 5CAA5065
 P 3900 4550
@@ -636,4 +564,19 @@ F 3 "" H 3900 4550 50  0001 C CNN
 	1    3900 4550
 	-1   0    0    1   
 $EndComp
+$Comp
+L Connector:Conn_01x04_Male J103
+U 1 1 5CAD19B5
+P 3350 3900
+F 0 "J103" H 3458 4089 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 3458 4090 50  0001 C CNN
+F 2 "connectors:1x4_2.54mm_castellated" H 3350 3900 50  0001 C CNN
+F 3 "~" H 3350 3900 50  0001 C CNN
+	1    3350 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3950 6850 3950
+Wire Wire Line
+	4950 4050 6800 4050
 $EndSCHEMATC
